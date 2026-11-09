@@ -1,0 +1,68 @@
+name: 文档修复初筛建议
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, edited]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 要重新审阅的 PR 编号
+        required: true
+        type: number
+
+concurrency:
+  group: value-screen-${{ github.event.pull_request.number || inputs.pr_number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # 自动运行使用目标分支提交；手动运行使用所选分支的提交，不检出 PR head。
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && github.sha || github.event.pull_request.base.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: 筛选 PR 标题并读取改动
+        id: pr
+        uses: actions/github-script@v9
+        env:
+          PR_INPUT: ${{ runner.temp }}/documentation-pr.json
+          PR_SNAPSHOT: ${{ runner.temp }}/documentation-pr-snapshot.json
+        with:
+          script: |
+            const readPR = require('./.github/scripts/pr_gov/src/read_pr.cjs');
+            await readPR({ github, context, core });
+
+      - name: 先分类再检查修复并生成评论正文
+        id: value
+        if: steps.pr.outputs.ready == 'true'
+        timeout-minutes: 3
+        env:
+          INPUT_FILES-JSON: ${{ runner.temp }}/documentation-pr.json
+          COMMENT_PATH: ${{ runner.temp }}/pr-comment.md
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-flash' }}
+          VALUE_MODEL_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python -I "$GITHUB_WORKSPACE/.github/scripts/pr_gov/pr_checker.py"
+
+      - name: 发布或更新 PR 评论
+        if: ${{ !cancelled() && steps.pr.outputs.resolved == 'true' }}
+        uses: actions/github-script@v9
+        env:
+          COMMENT_PATH: ${{ runner.temp }}/pr-comment.md
+          PR_SNAPSHOT: ${{ runner.temp }}/documentation-pr-snapshot.json
+          PR_READ_REASON: ${{ steps.pr.outputs.reason }}
+          CHECK_OUTCOME: ${{ steps.value.outcome }}
+        with:
+          script: |
+            const publishComment = require('./.github/scripts/pr_gov/src/publish_comment.cjs');
+            await publishComment({ github, context, core });

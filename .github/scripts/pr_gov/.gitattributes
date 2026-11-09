@@ -1,0 +1,3 @@
+prompts/*.txt text eol=lf
+templates/*.md text eol=lf
+templates/*.json text eol=lf

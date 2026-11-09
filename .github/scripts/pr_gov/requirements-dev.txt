@@ -1,0 +1,2 @@
+# 只用于验证 Action 和 Workflow YAML，不进入 Action 运行依赖。
+PyYAML==6.0.2

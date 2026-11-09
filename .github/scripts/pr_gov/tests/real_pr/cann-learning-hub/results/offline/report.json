@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "reviewerVersion": "documentation-llm-v1",
+  "execution": "offline",
+  "createdAt": "2026-11-08T18:49:21.098907+00:00",
+  "casesSha256": "f143358f2234d14fb6d83a955ec6594c94816d7137b89338c363423ae7e07497",
+  "sourceSha256": {
+    "src/ci.py": "37402b77fd7bceaca951571c404f441ad1d6beb2cae136d9b207235734a25f62",
+    "src/cli.py": "3ad22f3aaf56a17242729770461af230e8b5aecf4509cfeff4489b6e490302e3",
+    "src/export_git.py": "aca26ade2ee321619f90b23b80258e97edadf1ec8a33dceccad5876b797d0c2b",
+    "src/main.py": "0b01ad9fb69d6b11f574c6856e2b4e5c99d1e041a8b15d4b7f0387016aac6f3a",
+    "src/tc/__init__.py": "e335a3270bb36b78ce9c7c8d4710ae721cc9cf06c70263afda385d291900df3d",
+    "src/tc/action.py": "af88744c97c1548f8bc38dfc9266de53c8305da01d608727752234fe3505ca19",
+    "src/tc/assessment.py": "41d5002d691d212552d6454eca3c58a39915eab51d5bcb8752599eb538007d68",
+    "src/tc/commands.py": "1788b70051ea028557781fe0a0def56fecee84510fa298db5459f1cb99087ff5",
+    "src/tc/comments.py": "fc91c8efd704caa0f8ac985c952858823a8304771c5076745275e45697caf7f9",
+    "src/tc/common.py": "eb386ef3910b474a01847d0cd799957ada484b07ffe3ce08f65432a769b26295",
+    "src/tc/git_input.py": "1cdf8e4a7215bc7581019e1741542bbeb9afcb943bb1877a6cea9af7cec9e6a9",
+    "src/tc/github.py": "e80ebb4cd6883763684217061a0f72e17ee765fd5c83d92ffeae915d974ac1fd",
+    "src/tc/inspection.py": "750deb63abc1adb2ab26bcdbde60fb26547754dce7c7fce580f17cdc659407ad",
+    "src/tc/model.py": "6d76b15c5ee0a23fb20dd433fb38e86a1dbcb0b60ec98f48c2970fff81eb139a",
+    "src/tc/patch.py": "11f23fcbe39de4ab2dbfb51a278a749400f96d40bef799b3b8ffb3fefbc4ad8e",
+    "src/tc/pipeline.py": "9a58f45490c7f2ccf50afc3adadda04d9a724a43d90088f63a0ea01556fba190",
+    "src/tc/review.py": "15dc79391d9d715ca1aa1335411766eaee7cd9440d91c92ad11d5b882670ee3e",
+    "src/tc/routing.py": "471cf5f7a0e0f86813ef454a722354fb60db08720c18b325bee561ad1f935123",
+    "src/tc/transport.py": "cce58c4f45b45f95d7fc70f8a93f5ee4232c6b10f668c926f017358629872a2a"
+  },
+  "summary": {
+    "samples": 7,
+    "matches": 5,
+    "falseCandidates": 0,
+    "missedRepairs": 2,
+    "modelCompleted": 0
+  },
+  "samples": [
+    {
+      "id": "gitcode-cann-learning-hub-1407",
+      "expected": "candidate",
+      "actual": "uncertain",
+      "matches": false,
+      "inputSha256": "25645c6889d8df955abf8bb912a4a9cf6cba415f7d8346e4da25d155b2b117de",
+      "elapsedSeconds": 0.002,
+      "trace": {},
+      "report": {
+        "schemaVersion": 2,
+        "reviewerVersion": "documentation-llm-v1",
+        "status": "uncertain",
+        "category": "undetermined",
+        "recommendation": "standard_review",
+        "reasons": [
+          {
+            "code": "model_not_configured"
+          }
+        ],
+        "evidence": [],
+        "counts": {
+          "files": 1,
+          "changedLines": 6
+        },
+        "screening": "eligible",
+        "modelReview": {
+          "status": "skipped"
+        },
+        "limitations": [
+          "human_review_required",
+          "model_judgment_not_proof"
+        ],
+        "source": {
+          "baseSha": "38cb6f0ef90625e67d54ae244193e2be1723e4a5",
+          "headSha": "52e605f507895eb08eb4a9ebb10b70450e1f8444",
+          "provider": "atomgit"
+        }
+      }
+    },
+    {
+      "id": "gitcode-cann-learning-hub-1242",
+      "expected": "candidate",
+      "actual": "uncertain",
+      "matches": false,
+      "inputSha256": "10abcf7b77485a3eecdf9e28171787e73007fbe61e71d7cd63e5d46b700323a2",
+      "elapsedSeconds": 0.0,
+      "trace": {},
+      "report": {
+        "schemaVersion": 2,
+        "reviewerVersion": "documentation-llm-v1",
+        "status": "uncertain",
+        "category": "undetermined",
+        "recommendation": "standard_review",
+        "reasons": [
+          {
+            "code": "model_not_configured"
+          }
+        ],
+        "evidence": [],
+        "counts": {
+          "files": 1,
+          "changedLines": 4
+        },
+        "screening": "eligible",
+        "modelReview": {
+          "status": "skipped"
+        },
+        "limitations": [
+          "human_review_required",
+          "model_judgment_not_proof"
+        ],
+        "source": {
+          "baseSha": "47bee9b548acee7257b0e07f50f05625af7e77e6",
+          "headSha": "06a40ac54719200b9a26ac0cddf140a7e4d84052",
+          "provider": "atomgit"
+        }
+      }
+    },
+    {
+      "id": "gitcode-cann-learning-hub-1405",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matches": true,
+      "inputSha256": "a7bfb797fe27670e495c5a6df312d304a549f525937f4f7e518eac94082a3073",
+      "elapsedSeconds": 0.0,
+      "trace": {},
+      "report": {
+        "schemaVersion": 2,
+        "reviewerVersion": "documentation-llm-v1",
+        "status": "uncertain",
+        "category": "undetermined",
+        "recommendation": "standard_review",
+        "reasons": [
+          {
+            "code": "model_not_configured"
+          }
+        ],
+        "evidence": [],
+        "counts": {
+          "files": 1,
+          "changedLines": 2
+        },
+        "screening": "eligible",
+        "modelReview": {
+          "status": "skipped"
+        },
+        "limitations": [
+          "human_review_required",
+          "model_judgment_not_proof"
+        ],
+        "source": {
+          "baseSha": "172475503ca9a79c385c85ebf56701c752605eb0",
+          "headSha": "adc1995aed6f4748b90926467ca4bd08fa6ebca4",
+          "provider": "atomgit"
+        }
+      }
+    },
+    {
+      "id": "gitcode-cann-learning-hub-208",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matches": true,
+      "inputSha256": "0b0926130a7f5b840679735e9d66bf50b02367d81442caf96b5dd840e9860e9b",
+      "elapsedSeconds": 0.0,
+      "trace": {},
+      "report": {
+        "schemaVersion": 2,
+        "reviewerVersion": "documentation-llm-v1",
+        "status": "uncertain",
+        "category": "undetermined",
+        "recommendation": "standard_review",
+        "reasons": [
+          {
+            "code": "model_not_configured"
+          }
+        ],
+        "evidence": [],
+        "counts": {
+          "files": 1,
+          "changedLines": 6
+        },
+        "screening": "eligible",
+        "modelReview": {
+          "status": "skipped"
+        },
+        "limitations": [
+          "human_review_required",
+          "model_judgment_not_proof"
+        ],
+        "source": {
+          "baseSha": "a58d27008c9a856c2a5f873781ad6618c475e3de",
+          "headSha": "c4c74b039d894338c54a442f19a62ed3654b8ccb",
+          "provider": "atomgit"
+        }
+      }
+    },
+    {
+      "id": "gitcode-cann-learning-hub-528",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matches": true,
+      "inputSha256": "a05714d7c07d620cf7efa0137c2a7fdb7d48875fc5e1d1f59f54fdb306b55d1c",
+      "elapsedSeconds": 0.001,
+      "trace": {},
+      "report": {
+        "schemaVersion": 2,
+        "reviewerVersion": "documentation-llm-v1",
+        "status": "uncertain",
+        "category": "undetermined",
+        "recommendation": "standard_review",
+        "reasons": [
+          {
+            "code": "outside_documentation_scope",
+            "path": "quick_start/cann_basics/01_ai_basics.ipynb"
+          },
+          {
+            "code": "outside_documentation_scope",
+            "path": "quick_start/cann_basics/images/training_inference.png"
+          },
+          {
+            "code": "unsupported_file_status",
+            "path": "quick_start/cann_basics/images/training_inference.png"
+          }
+        ],
+        "evidence": [],
+        "counts": {
+          "files": 3,
+          "changedLines": 6
+        },
+        "screening": "skipped",
+        "modelReview": {
+          "status": "skipped"
+        },
+        "limitations": [
+          "human_review_required",
+          "model_judgment_not_proof"
+        ],
+        "source": {
+          "baseSha": "d330c50d87257a19d0ac7898f924fe9b8fab4658",
+          "headSha": "ebcef1cccd486fa2d44cdabd5b9051c00c1b4560",
+          "provider": "atomgit"
+        }
+      }
+    },
+    {
+      "id": "gitcode-cann-learning-hub-1135",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matches": true,
+      "inputSha256": "a7094c0d93c02338ee32b5e8b405ea163d2da05f1097310aca89213fad235334",
+      "elapsedSeconds": 0.0,
+      "trace": {},
+      "report": {
+        "schemaVersion": 2,
+        "reviewerVersion": "documentation-llm-v1",
+        "status": "uncertain",
+        "category": "undetermined",
+        "recommendation": "standard_review",
+        "reasons": [
+          {
+            "code": "outside_documentation_scope",
+            "path": "contrib/tutorials/data_structures_compute/04_reduce_priority_queue_heap/src/reduce_lab/scripts/build_runner.sh"
+          },
+          {
+            "code": "outside_documentation_scope",
+            "path": "contrib/tutorials/data_structures_compute/04_reduce_priority_queue_heap/src/reduce_lab/scripts/env_custom_opp.sh"
+          },
+          {
+            "code": "outside_documentation_scope",
+            "path": "contrib/tutorials/data_structures_compute/07_sort_for_moe_fusion/src/moe_sort_lab/scripts/env_custom_opp.sh"
+          },
+          {
+            "code": "outside_documentation_scope",
+            "path": "skills/cannjudge-submit/login.sh"
+          },
+          {
+            "code": "scope_limit"
+          }
+        ],
+        "evidence": [],
+        "counts": {
+          "files": 4,
+          "changedLines": 144
+        },
+        "screening": "skipped",
+        "modelReview": {
+          "status": "skipped"
+        },
+        "limitations": [
+          "human_review_required",
+          "model_judgment_not_proof"
+        ],
+        "source": {
+          "baseSha": "29fa2c90a9c08a1d0f68869081432d1f5a07e5d2",
+          "headSha": "503b136bd39d1c35854d0e7df13e46e9ec17ca27",
+          "provider": "atomgit"
+        }
+      }
+    },
+    {
+      "id": "gitcode-cann-learning-hub-1380",
+      "expected": "uncertain",
+      "actual": "uncertain",
+      "matches": true,
+      "inputSha256": "e17ca30dea1c27ba95a2b65090c73b959cae9d53fa9190071ae5b52abca0ad7b",
+      "elapsedSeconds": 0.001,
+      "trace": {},
+      "report": {
+        "schemaVersion": 2,
+        "reviewerVersion": "documentation-llm-v1",
+        "status": "uncertain",
+        "category": "undetermined",
+        "recommendation": "standard_review",
+        "reasons": [
+          {
+            "code": "scope_limit"
+          }
+        ],
+        "evidence": [],
+        "counts": {
+          "files": 5,
+          "changedLines": 68
+        },
+        "screening": "skipped",
+        "modelReview": {
+          "status": "skipped"
+        },
+        "limitations": [
+          "human_review_required",
+          "model_judgment_not_proof"
+        ],
+        "source": {
+          "baseSha": "bb2a6d6435fed4203cc3faa96a9f6c4367be3878",
+          "headSha": "2722a1059c58a85cfe356afe2b9d78546e85a95c",
+          "provider": "atomgit"
+        }
+      }
+    }
+  ],
+  "modelRequests": 0,
+  "platformWrites": 0
+}

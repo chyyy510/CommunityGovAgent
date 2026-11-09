@@ -1,0 +1,85 @@
+## 概述
+本样例展示了自定义算子通过torch原生提供的cppextension方式注册eager模式与torch.compile模式的注册样例，eager模式与torch.compile模式的介绍参考：[Link](https://pytorch.org/get-started/pytorch-2.0)。
+
+## 目录结构介绍
+```
+add_custom_template_pytorch/
+├── README.md
+├── build_and_run.sh
+├── setup.py
+├── csrc
+│   ├── add_custom.cpp
+│   ├── function.h
+│   ├── pytorch_npu_helper.hpp
+│   └── registration.cpp
+└── custom_ops
+    ├── __init__.py
+    └── add_custom.py
+```
+
+## 样例脚本build_and_run.sh关键步骤解析
+
+  - 编译适配层代码并生成wheel包
+    ```bash
+    python3 setup.py build bdist_wheel
+    ```
+
+  - 安装编译生成的wheel包
+    ```bash
+    cd ${BASE_DIR}
+    pip3 install dist/*.whl
+    ```
+
+## 自定义算子入图关键步骤解析
+  - 根据Ascend C工程产生的REG_OP算子原型填充torchair.ge.custom_op的参数。
+
+    AddCustom的REG_OP原型为：
+    ```cpp
+    REG_OP(AddCustom)
+        .INPUT(x, ge::TensorType::ALL())
+        .INPUT(y, ge::TensorType::ALL())
+        .OUTPUT(z, ge::TensorType::ALL())
+        .OP_END_FACTORY_REG(AddCustom);
+    ```
+
+  - 注册自定义算子converter
+    ```python
+    from torchair import register_fx_node_ge_converter
+    from torchair.ge import Tensor
+    @register_fx_node_ge_converter(torch.ops.myops.add_custom.default)
+    def convert_npu_add_custom(x: Tensor, y: Tensor, z: Tensor = None, meta_outputs: Any = None):
+        return torchair.ge.custom_op(
+            "AddCustom",
+            inputs={"x": x, "y": y,},
+            outputs=['z']
+        )
+    ```
+
+## 运行样例算子
+该样例脚本基于Pytorch2.1、python3.9 运行
+### 1.编译算子工程
+运行此样例前，请参考[编译运行](../add_custom_template/README.md#operatorcompile)完成前期准备。
+
+### 2.pytorch调用的方式调用样例运行
+
+  - 进入到样例目录
+
+    以命令行方式下载样例代码，master分支为例。
+    ```bash
+    cd ${git_clone_path}/reference_practice/pytorch_online_inference_operator_optimize/src/add_custom_template_pytorch_extension
+    ```
+
+  - 样例执行
+
+    该脚本会编译适配层代码生成wheel包，并安装到当前环境。具体过程可参见build_and_run.sh脚本。
+    ```bash
+    bash build_and_run.sh
+    ```
+
+### 其他说明
+    更加详细的Pytorch适配算子开发指导可以参考[LINK](https://gitee.com/ascend/op-plugin/wikis)中的“算子适配开发指南”。
+
+## 更新说明
+| 时间       | 更新事项     |
+| ---------- | ------------ |
+| 2025/01/17 | 新增本readme |

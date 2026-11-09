@@ -1,0 +1,5 @@
+{
+  "documentation": "(^|[^a-z0-9_])(docs?|documentation|readme|markdown|rst)($|[^a-z0-9_])|文档|说明|教程|指南|手册|博客",
+  "repair": "(^|[^a-z0-9_])(fix(es|ed|ing)?|correct(s|ed|ing|ion|ions)?|repair(s|ed|ing)?|resolve(s|d)?)($|[^a-z0-9_])|修复|修正|纠正|更正|纠错|勘误",
+  "languageRepair": "(^|[^a-z0-9_])(typos?|spelling|grammar|punctuation)($|[^a-z0-9_])|错别字|错字|笔误|拼写|标点|语病|文字错误|文字缺陷"
+}

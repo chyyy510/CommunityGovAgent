@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://gitcode.com/cann/cann-learning-hub",
+  "collectedAt": "2026-11-08T18:49:12.607003+00:00",
+  "license": {
+    "path": "LICENSE",
+    "revision": "52e605f507895eb08eb4a9ebb10b70450e1f8444",
+    "blobSha": "52da64f99a5b43546a571a0b6e1467e931ad09f9",
+    "sha256": "76bb87f2aaf57119cbc2ad8cb36dda7158f9acd931bb3b08ccc8a408f1664369",
+    "bytes": 5316
+  },
+  "casesSha256": "7c5915e3171b31d4ee2422cbf03947fc4d9525c00405a831cf9b9d21c9eedf21",
+  "samples": [
+    {
+      "number": 1407,
+      "title": "docs(计算机组成原理): 修正 README 三处文字缺陷（重复词/术语缺字/量词）",
+      "url": "https://gitcode.com/cann/cann-learning-hub/pull/1407",
+      "state": "open",
+      "headSha": "52e605f507895eb08eb4a9ebb10b70450e1f8444",
+      "comparisonBaseSha": "38cb6f0ef90625e67d54ae244193e2be1723e4a5",
+      "observedTargetBranchTip": "eba52689f820a801c23b9dee5a3d41ae5a8def4b",
+      "baseVerification": "complete_compare_matches_pr_diff",
+      "fileCount": 1,
+      "fileListPages": 1,
+      "commitPages": 1,
+      "commitShas": [
+        "52e605f507895eb08eb4a9ebb10b70450e1f8444"
+      ],
+      "snapshotStable": true,
+      "files": [
+        {
+          "filename": "contrib/tutorials/computer_composition_and_architecture/README.md",
+          "patchSha256": "2648891b4e3fa20ea0dc66e67de8f65a1c741cebcd05c93813701cc7410eb70a",
+          "base": {
+            "blobSha": "c4ca4c720e625d7c7de457ae0b905b9cbf05a189",
+            "sha256": "4f4efbde0b1d431d989e9fc63467a0ccf100916e795e618bd9d7718d034a5cc3",
+            "bytes": 6721
+          },
+          "head": {
+            "blobSha": "5fe054ab5fdc49db02313047314a5c577cf8afe6",
+            "sha256": "ff39ba48f366a7767e38af6ad6cdfd11a289ec711a925b9785cbe44e4573e3cd",
+            "bytes": 6718
+          },
+          "patchReconstructsHead": true
+        }
+      ],
+      "inputSha256": "25645c6889d8df955abf8bb912a4a9cf6cba415f7d8346e4da25d155b2b117de"
+    },
+    {
+      "number": 1242,
+      "title": "docs(blogs): 修正中文正文重复标点笔误（。。/，，）",
+      "url": "https://gitcode.com/cann/cann-learning-hub/pull/1242",
+      "state": "open",
+      "headSha": "06a40ac54719200b9a26ac0cddf140a7e4d84052",
+      "comparisonBaseSha": "47bee9b548acee7257b0e07f50f05625af7e77e6",
+      "observedTargetBranchTip": "eba52689f820a801c23b9dee5a3d41ae5a8def4b",
+      "baseVerification": "complete_compare_matches_pr_diff",
+      "fileCount": 1,
+      "fileListPages": 1,
+      "commitPages": 1,
+      "commitShas": [
+        "06a40ac54719200b9a26ac0cddf140a7e4d84052"
+      ],
+      "snapshotStable": true,
+      "files": [
+        {
+          "filename": "blogs/inference/sals_long_sequence_inference/sals_long_sequence_inference.md",
+          "patchSha256": "7426c262feaeb362187f9c202c27d6a6b17036f14eb5a76580dcc433b4c75b2d",
+          "base": {
+            "blobSha": "957177f72c7e13e202a5e9c3b2168f6707a85f78",
+            "sha256": "16a9ca29da0156d3068f09b87ae8ec0c8ca3d310263ff3c2829a3dbbc82694d1",
+            "bytes": 12853
+          },
+          "head": {
+            "blobSha": "345daa8fb35f3c486894f56ddd2bd8c59ee82deb",
+            "sha256": "c180df9a32d2f0a4e3e51977b11dcbcb5474502527a455b95271ec97eea0e3c7",
+            "bytes": 12799
+          },
+          "patchReconstructsHead": true
+        }
+      ],
+      "inputSha256": "10abcf7b77485a3eecdf9e28171787e73007fbe61e71d7cd63e5d46b700323a2"
+    },
+    {
+      "number": 1405,
+      "title": "docs: 修正 add_custom_template_pytorch_extension README 中的 PyTorch 链接",
+      "url": "https://gitcode.com/cann/cann-learning-hub/pull/1405",
+      "state": "merged",
+      "headSha": "adc1995aed6f4748b90926467ca4bd08fa6ebca4",
+      "comparisonBaseSha": "172475503ca9a79c385c85ebf56701c752605eb0",
+      "observedTargetBranchTip": "eba52689f820a801c23b9dee5a3d41ae5a8def4b",
+      "baseVerification": "complete_compare_matches_pr_diff",
+      "fileCount": 1,
+      "fileListPages": 1,
+      "commitPages": 1,
+      "commitShas": [
+        "a4e9bfd32973f088dfdf340354cc0152774435bc",
+        "adc1995aed6f4748b90926467ca4bd08fa6ebca4"
+      ],
+      "snapshotStable": true,
+      "files": [
+        {
+          "filename": "reference_practice/pytorch_online_inference_operator_optimize/src/add_custom_template_pytorch_extension/README.md",
+          "patchSha256": "eea98812d99ccb71dd2c7dae8d0167a03e6b81fe807da1e56fcec6b15099dc2e",
+          "base": {
+            "blobSha": "25030675125cabbf40c1be33ba47f3e8c4b67604",
+            "sha256": "d94ebaf0637e54f45964eeef74c2e1a6e7f1002d2f57727c82ee8fa60b6f65e0",
+            "bytes": 2663
+          },
+          "head": {
+            "blobSha": "d1bc38320dc80fc56cc180c758d76edd9239a679",
+            "sha256": "ed8b3407e0a0a34ab007a236208d6a1769b6a28ddf7755ec717443734c55f164",
+            "bytes": 2669
+          },
+          "patchReconstructsHead": true
+        }
+      ],
+      "inputSha256": "a7bfb797fe27670e495c5a6df312d304a549f525937f4f7e518eac94082a3073"
+    },
+    {
+      "number": 208,
+      "title": "修正部分拼写（常识性）错误",
+      "url": "https://gitcode.com/cann/cann-learning-hub/pull/208",
+      "state": "merged",
+      "headSha": "c4c74b039d894338c54a442f19a62ed3654b8ccb",
+      "comparisonBaseSha": "a58d27008c9a856c2a5f873781ad6618c475e3de",
+      "observedTargetBranchTip": "eba52689f820a801c23b9dee5a3d41ae5a8def4b",
+      "baseVerification": "complete_compare_matches_pr_diff",
+      "fileCount": 1,
+      "fileListPages": 1,
+      "commitPages": 1,
+      "commitShas": [
+        "13d12569b5425c5f1a154978b90a6c5708e9e0b4",
+        "c4c74b039d894338c54a442f19a62ed3654b8ccb"
+      ],
+      "snapshotStable": true,
+      "files": [
+        {
+          "filename": "docs/acceptance_criteria_for_new_course_submission_and_launch.md",
+          "patchSha256": "e51e35c58f1e29078b611c93b0e63ca458eec85a4a03e047c4d9a206bc35c581",
+          "base": {
+            "blobSha": "35e66a37d8f7d3dff851d77b0c35d4425d4a6f73",
+            "sha256": "7efd4f905d2bb443068f1fe3353a0048f34d26513be32550cae01da9f7a58ca2",
+            "bytes": 12043
+          },
+          "head": {
+            "blobSha": "e70704235bc51ea41c9edb785e9feb512d72483f",
+            "sha256": "5db9243f6efe3e6f8c33da0d3724fedadbbe030881b9c2efe4b8122d3ef3c558",
+            "bytes": 12041
+          },
+          "patchReconstructsHead": true
+        }
+      ],
+      "inputSha256": "0b0926130a7f5b840679735e9d66bf50b02367d81442caf96b5dd840e9860e9b"
+    },
+    {
+      "number": 528,
+      "title": "fix: correct typos in CONTRIBUTION.md and training_inference.png reference",
+      "url": "https://gitcode.com/cann/cann-learning-hub/pull/528",
+      "state": "merged",
+      "headSha": "ebcef1cccd486fa2d44cdabd5b9051c00c1b4560",
+      "comparisonBaseSha": "d330c50d87257a19d0ac7898f924fe9b8fab4658",
+      "observedTargetBranchTip": "eba52689f820a801c23b9dee5a3d41ae5a8def4b",
+      "baseVerification": "complete_compare_matches_pr_diff",
+      "fileCount": 3,
+      "fileListPages": 1,
+      "commitPages": 1,
+      "commitShas": [
+        "ebcef1cccd486fa2d44cdabd5b9051c00c1b4560"
+      ],
+      "snapshotStable": true,
+      "files": [
+        {
+          "filename": "CONTRIBUTION.md",
+          "patchSha256": "805b5ab99735420d04227e0a8d700fc1a206b23781ec30948d1d15accb227817",
+          "base": {
+            "blobSha": "96363ce9248a91e44481b5c2c750f4e0085b01df",
+            "sha256": "0f4f8493f7b3e653013a611f2597a68b0a6a5171c5cb21ae764cbe4c4b751e8a",
+            "bytes": 4389
+          },
+          "head": {
+            "blobSha": "bacf9e84164593bcf1e917a41600ea107d80f213",
+            "sha256": "48d48a7aa676376aedb684af890db421b159f72b8bec2251be3fb13292c88668",
+            "bytes": 4391
+          },
+          "patchReconstructsHead": true
+        },
+        {
+          "filename": "quick_start/cann_basics/01_ai_basics.ipynb",
+          "patchSha256": "75cc0ebc150184a69663337a333374a46de0dc784620eff9616f37f5e0225b82",
+          "base": {
+            "blobSha": "a3c8541b4b3414f6b02fff44a20fb2f03e67899d",
+            "sha256": "f6512827e64ca214a88a2562593a6c710d383a6daf34ac910a75e9fac046a6f2",
+            "bytes": 34013
+          },
+          "head": {
+            "blobSha": "cb6f893a6b07bc7f0f4601504495a246f73057ff",
+            "sha256": "8a09aff985d53bf67cc0134fb873e2bf651f3c68e3d9d421867c314d4b6ccc3d",
+            "bytes": 34014
+          },
+          "patchReconstructsHead": true
+        },
+        {
+          "filename": "quick_start/cann_basics/images/training_inference.png",
+          "patchSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "base": {
+            "blobSha": "a4d34a0dc4a0a08d87540ebb50900cf7ba6c98a9",
+            "sha256": "39829f365b30870ebca05e15aea0a9131aef75724a8ad67ab83f9ac0ff3e5ea6",
+            "bytes": 237355
+          },
+          "head": {
+            "blobSha": "a4d34a0dc4a0a08d87540ebb50900cf7ba6c98a9",
+            "sha256": "39829f365b30870ebca05e15aea0a9131aef75724a8ad67ab83f9ac0ff3e5ea6",
+            "bytes": 237355
+          },
+          "renameBlobUnchanged": true,
+          "contentOmitted": "non_modified_file_metadata_is_sufficient_for_scope_gate"
+        }
+      ],
+      "inputSha256": "a05714d7c07d620cf7efa0137c2a7fdb7d48875fc5e1d1f59f54fdb306b55d1c"
+    },
+    {
+      "number": 1135,
+      "title": "fix(sh): convert 4 CRLF scripts to LF to avoid bad interpreter",
+      "url": "https://gitcode.com/cann/cann-learning-hub/pull/1135",
+      "state": "merged",
+      "headSha": "503b136bd39d1c35854d0e7df13e46e9ec17ca27",
+      "comparisonBaseSha": "29fa2c90a9c08a1d0f68869081432d1f5a07e5d2",
+      "observedTargetBranchTip": "eba52689f820a801c23b9dee5a3d41ae5a8def4b",
+      "baseVerification": "complete_compare_matches_pr_diff",
+      "fileCount": 4,
+      "fileListPages": 1,
+      "commitPages": 1,
+      "commitShas": [
+        "503b136bd39d1c35854d0e7df13e46e9ec17ca27"
+      ],
+      "snapshotStable": true,
+      "files": [
+        {
+          "filename": "contrib/tutorials/data_structures_compute/04_reduce_priority_queue_heap/src/reduce_lab/scripts/build_runner.sh",
+          "patchSha256": "295a57339596f223ff123e1cb7d9186c38bd267adfa6ee298380cec2588af8ac",
+          "base": {
+            "blobSha": "27accadccab5e8d43b7b133955c56f8e88072a87",
+            "sha256": "ce32aecf469719498b699f79c2dcf600cbf8e80a27522f28c4a62c1b4c7b3c6e",
+            "bytes": 595
+          },
+          "head": {
+            "blobSha": "f4f07cfed431b5766fbdf14e5846400fed484bff",
+            "sha256": "a85f8e9e39e5fd8cdebbf93cbfbbc46cadd36fa4d16c4e63141e14aceb30c17c",
+            "bytes": 579
+          },
+          "patchReconstructsHead": true
+        },
+        {
+          "filename": "contrib/tutorials/data_structures_compute/04_reduce_priority_queue_heap/src/reduce_lab/scripts/env_custom_opp.sh",
+          "patchSha256": "a96357b8636b8529001c74fcc7d0029da6df1645bd6aa2fa9790a301505d3d2d",
+          "base": {
+            "blobSha": "a4f2c6ee094261e0025cc036be620e8357a9307d",
+            "sha256": "12e3bd338cc4355507573e882a4f65fab42c3ff8dbd6278aed982809beba7302",
+            "bytes": 1234
+          },
+          "head": {
+            "blobSha": "7a4f9376d0ee1f7436713254fa7674a411a1c6a4",
+            "sha256": "c62ad18b7f362b9cdc0d3ab2f29d1efc1694ad759498db24e239f73158b59105",
+            "bytes": 1208
+          },
+          "patchReconstructsHead": true
+        },
+        {
+          "filename": "contrib/tutorials/data_structures_compute/07_sort_for_moe_fusion/src/moe_sort_lab/scripts/env_custom_opp.sh",
+          "patchSha256": "39b080ee154ef18c19f54e00cf4e7068229da8d7152c654f89bec4447337684c",
+          "base": {
+            "blobSha": "0ddaf8212f49aac58addc2b441f59b4bffcb752d",
+            "sha256": "6bf773863fb9811619c53cb669ec3cf856021c4b5c2623ba3d896f7140846a43",
+            "bytes": 1172
+          },
+          "head": {
+            "blobSha": "423bbd4974bc2a4178d44bf4680708136ee9d8eb",
+            "sha256": "c93389bc141d2ba4a0b2e977f0b17f6d6bb8f4bd9a534d963e758ffe27b3a267",
+            "bytes": 1147
+          },
+          "patchReconstructsHead": true
+        },
+        {
+          "filename": "skills/cannjudge-submit/login.sh",
+          "patchSha256": "bd8649f0933b85d54164d307250e42647851f877701968c2a00f62fc511fedbc",
+          "base": {
+            "blobSha": "f5b1bf0a93854b1357340a03e06ebf8f180d9688",
+            "sha256": "fc5fbbcae8eb0aedbf38ca290affb2dba045901cacaf2eca4f5ea7423adc6956",
+            "bytes": 258
+          },
+          "head": {
+            "blobSha": "8775b480ea75b7c765d910bbf9da50774bff2eb8",
+            "sha256": "b0f141a0a6fed97c2439b226928e16cd206bc69b17d9341e0181b2ee8a738e78",
+            "bytes": 253
+          },
+          "patchReconstructsHead": true
+        }
+      ],
+      "inputSha256": "a7094c0d93c02338ee32b5e8b405ea163d2da05f1097310aca89213fad235334"
+    },
+    {
+      "number": 1380,
+      "title": "docs(blogs): 修复博客文档标题层级跳级（H1 后直接 H3）",
+      "url": "https://gitcode.com/cann/cann-learning-hub/pull/1380",
+      "state": "merged",
+      "headSha": "2722a1059c58a85cfe356afe2b9d78546e85a95c",
+      "comparisonBaseSha": "bb2a6d6435fed4203cc3faa96a9f6c4367be3878",
+      "observedTargetBranchTip": "eba52689f820a801c23b9dee5a3d41ae5a8def4b",
+      "baseVerification": "complete_compare_matches_pr_diff",
+      "fileCount": 5,
+      "fileListPages": 1,
+      "commitPages": 1,
+      "commitShas": [
+        "2722a1059c58a85cfe356afe2b9d78546e85a95c"
+      ],
+      "snapshotStable": true,
+      "files": [
+        {
+          "filename": "blogs/inference/deepseek_r1_superpod_inference_optimization/基于Atlas 900 A3 SuperPoD推理部署Deepseek-R1性能优化实践.md",
+          "patchSha256": "646710fd2e9dc4632fb59fa682d8e8bc52dac82340d7780ff6161edbb1c387ef",
+          "base": {
+            "blobSha": "a0987e5b2071f272df19b76e01aace311faa1d67",
+            "sha256": "b49d00cf7a92bb9a787d6d2b16a337e7c6bd5b63bea59cc41e4016c83189ba74",
+            "bytes": 9375
+          },
+          "head": {
+            "blobSha": "3b22d607a0b77f83786e329ff6ece41e9c38bc0d",
+            "sha256": "27499a9c40b7c6f25409fc75bef84bcab7a9aa99603a9497347338ab22910ddb",
+            "bytes": 9365
+          },
+          "patchReconstructsHead": true
+        },
+        {
+          "filename": "blogs/inference/hixl_mooncake_vllm_kv_cache_pooling/HIXL、Mooncake与vLLM的KV Cache池化与传输.md",
+          "patchSha256": "196ad1a7b60d8f2c6790ed07ef6dcd6cd8eb2fde1b6a2c2a3f5496a379318e3b",
+          "base": {
+            "blobSha": "a72c5ac8f94c8746f163d227a1dc8c1f1884857e",
+            "sha256": "65032ee8d34d7eb268e1fd60b5dccb10312c830bb77401cb11d7448131942d3b",
+            "bytes": 4612
+          },
+          "head": {
+            "blobSha": "e20acf5e3c431bea191fad45f2fdf1e75c418407",
+            "sha256": "0387f041a0b573f65de96d7c4abea4c61cbdeae1be68aeb2bb2ff78e1631d57f",
+            "bytes": 4609
+          },
+          "patchReconstructsHead": true
+        },
+        {
+          "filename": "blogs/inference/longcat_flash_lite_inference_optimization/longcat_flash_lite_inference_optimization.md",
+          "patchSha256": "4e812bb95a8b936e00e65cc70b31fc3775a88aa143b3c2d3698e2278ec694aa5",
+          "base": {
+            "blobSha": "d3456e768e608a268542d08c41b28c6e98cca603",
+            "sha256": "ce7ac6e3dc3d25f5d33c46caef9fbe1a1749b6441f69b269e2276f051aacc5f0",
+            "bytes": 9738
+          },
+          "head": {
+            "blobSha": "3f3bb5fa9264f2e79a1215d9f949c645c0c53cbe",
+            "sha256": "63c48cabfebcb1c5e629b6747bfcc32333ffb1ef5af708f12792090dfa454346",
+            "bytes": 9730
+          },
+          "patchReconstructsHead": true
+        },
+        {
+          "filename": "blogs/inference/longcat_flash_superpod_inference_optimization/基于Atlas 900 A3 SuperPoD的LongCat-Flash模型推理性能优化实践.md",
+          "patchSha256": "32c80646ee23dcae54fa560583d2e4578fbdc868a2051fde2f542132bdef1123",
+          "base": {
+            "blobSha": "d8e14f5a90002ea4dca2ad84a607613ab51664dd",
+            "sha256": "6626cff951a093b7050b92a0592bea3cde0adeac11ada24f2399cbddf40eec8b",
+            "bytes": 6479
+          },
+          "head": {
+            "blobSha": "7082a5c5a2c88023778c577685497e1cb03ffe96",
+            "sha256": "6d67d9e06905cc43c063f1ecf6ea542ab6e3397428d7c25f592c26eb68e7cae8",
+            "bytes": 6471
+          },
+          "patchReconstructsHead": true
+        },
+        {
+          "filename": "blogs/operator/tilingkey_template_programming/TilingKey模板化编程.md",
+          "patchSha256": "83f80d21661d7e09a72033563525b50b5fd70b029ce491c94c4508eea8f67a52",
+          "base": {
+            "blobSha": "885a6b0b1906d11a02e2601690199c80e8494a91",
+            "sha256": "2d55ea0a48c8da4ded46c43f79d9283a252d1fa90e7ab77135cb2964e55fe06f",
+            "bytes": 10942
+          },
+          "head": {
+            "blobSha": "e49d04c367bc3c758444c1e676e7d4abdfdbaf17",
+            "sha256": "7b23599c7b2c405bae98beab6428f21824304aba83e250ca8194557b3d42ff30",
+            "bytes": 10937
+          },
+          "patchReconstructsHead": true
+        }
+      ],
+      "inputSha256": "e17ca30dea1c27ba95a2b65090c73b959cae9d53fa9190071ae5b52abca0ad7b"
+    }
+  ]
+}
