@@ -56,7 +56,7 @@ $\text{LSE}_{\text{block}}(\mathbf{S}; b) = \left[ \underbrace{\max(\mathbf{S}_i
 
   - $K_{index}$ 矩阵 3-Buffer 循环复用：分配 $96\text{ KB}$，L1层级基本块为 $(1024,64)$。
 
-- L0A，L0B，L0C使能 Double Buffer，分别划分 $\text{1 KB}$，$\text{64 KB}$，$\text{128 KB}$，这是一种对昇腾较为亲和的设置，可以提高算力利用率。
+- L0A，L0B，L0C使能 Double Buffer，分别划分 1 KB、64 KB、128 KB，这是一种对昇腾较为亲和的设置，可以提高算力利用率。
 
 ## QSI Top-k 计算实现
 
@@ -109,7 +109,7 @@ SFAA针对离散访存进行了指令缩减及搬运聚合的细致优化，计�
 
   - 其中 $K/V$ 矩阵每次的搬运大小为 $(128,512)$
 
-- L0A，L0B，L0C使能 Double Buffer，分别划分为 $\text{64 KB}$，$\text{64 KB}$，$\text{128 KB}$，在 $C_1$ 阶段一次搬入 L0A 和 L0B的矩阵块大小分别为 $(128,64),(256,128)$；在 $C_2$ 阶段一次搬入 L0A 和 L0B 的矩阵块大小都为 $(128,128)$。
+- L0A，L0B，L0C使能 Double Buffer，分别划分为 64 KB、64 KB、128 KB，在 $C_1$ 阶段一次搬入 L0A 和 L0B的矩阵块大小分别为 $(128,64),(256,128)$；在 $C_2$ 阶段一次搬入 L0A 和 L0B 的矩阵块大小都为 $(128,128)$。
 
 ## SFAA Pipeline 设计
 
